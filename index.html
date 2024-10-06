@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- set seo optimization -->
+    <meta name="description" content="Senin-selasa, 30-31 Oktober 2023. Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Menghadiri Acara Pernikahan Kami." />
+
+    <link rel="canonical" hreflang="id" href="https://menikahlah.com/ariacitra" />
+
+    <meta property="og:title" content="Undangan Pernikahan Baehaqi & Lulu - Menikahlah" />
+    <meta property="og:url" content="https://menikahlah.com/ariacitra" />
+    <meta property="og:description" content="Senin-selasa, 30-31 Oktober 2023. Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Menghadiri Acara Pernikahan Kami." />
+    <meta property="og:image" content="https://drive.google.com/file/d/1C67oBMBHSCKgW2HqxSTPkr6pgW9yOPng/view?usp=sharing" />
+
+    <!-- add favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/msg-rsvp.svg" />
+
+    <!-- add cdn tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- add tailwind.config -->
+    <script src="assets/scripts/tailwind.config.js"></script>
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- add cdn alphine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+
+    <!-- add customize font -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+    </style>
+
+    <style type="text/tailwindcss">
+        @font-face { font-family: "Charlotte Southern"; src: url("assets/fonts/Charlotte\ Southern.otf"); }
+    </style>
+
+    <title>Wedding Invitational Shahrul dan Indah</title>
+</head>
+
+<body class="font-poppins">
+    <!-- popup invitation section -->
+    <section id="popup-invitation" class="bg-motif bg-flower popup-invitation flex h-screen w-screen items-center justify-center overflow-hidden bg-cover bg-[length:100%_140%] bg-no-repeat">
+        <div class="popup-invitation-container laptop:mx-8 tablet:mx-6 mx-4 flex flex-col items-center text-center text-white">
+            <img class="laptop:w-[180px] laptop:h-[180px] tablet:w-[160px] tablet:h-[160px] mb-5" src="assets/images/couple-circle-cover.png" alt="couple" width="140" height="140" />
+            <div class="popup-invitation-data">
+                <h1 class="font-charlotte laptop:text-6xl mb-5 text-5xl">
+                    Shahrul & Indah
+                </h1>
+                <h2 class="laptop:text-xl mb-2.5 text-base font-medium">
+                    Minggu 13 Oktober 2024
+                </h2>
+                <p class="laptop:text-lg mb-3 text-sm">Kepada Bapak/Ibu/Saudara/i</p>
+                
+            </div>
+            <button id="inv-btn" type="button" class="text-motif laptop:text-lg tablet:text-base flex w-fit items-center rounded-xl bg-white p-2 text-sm font-medium duration-300 hover:-translate-y-1">
+          <a href="#" class="flex"
+            ><img
+              class="mr-1.5 hover:animate-bounce"
+              alt="book"
+              width="20"
+              height="20"
+              src="assets/icons/book-button-cover.svg"
+            />Buka Undangan</a
+          >
+        </button>
+        </div>
+    </section>
+
+    <!-- navbar -->
+    <header id="navbar">
+        <nav class="nav-container bg-motif fixed bottom-0 left-0 right-0 z-[1]">
+            <ul class="nav-menu flex flex-row items-center justify-center">
+                <li class="laptop:text-lg tablet:text-base tablet:px-7 laptop:px-12 hover:bg-tiki-hut py-3 px-2.5 text-sm font-medium text-white transition duration-300 ease-in-out">
+                    <a class="flex flex-col items-center" href="#home"><img class="mb-1.5 hover:animate-bounce" src="assets/icons/home-navbar.svg" alt="home" width="30" height="30" />Home</a>
+                </li>
+                <li class="laptop:text-lg tablet:text-base tablet:px-7 laptop:px-12 hover:bg-tiki-hut py-3 px-2.5 text-sm font-medium text-white transition duration-300 ease-in-out">
+                    <a class="flex flex-col items-center" href="#couples"><img class="mb-1.5 hover:animate-bounce" src="assets/icons/couples-navbar.svg" alt="couples" width="30" height="30" />Couples</a>
+                </li>
+                <li class="laptop:text-lg tablet:text-base tablet:px-7 laptop:px-12 hover:bg-tiki-hut py-3 px-2.5 text-sm font-medium text-white transition duration-300 ease-in-out">
+                    <a class="flex flex-col items-center" href="#event"><img class="mb-1.5 hover:animate-bounce" src="assets/icons/event-navbar.svg" alt="event" width="30" height="30" />Event</a>
+                </li>
+                <li class="laptop:text-lg tablet:text-base tablet:px-7 laptop:px-12 hover:bg-tiki-hut py-3 px-2.5 text-sm font-medium text-white transition duration-300 ease-in-out">
+                    <a class="flex flex-col items-center" href="#gallery"><img class="mb-1.5 hover:animate-bounce" src="assets/icons/gallery-navbar.svg" alt="gallery" width="30" height="30" />Gallery</a>
+                </li>
+                <li class="laptop:text-lg tablet:text-base tablet:px-7 laptop:px-12 hover:bg-tiki-hut py-3 px-2.5 text-sm font-medium text-white transition duration-300 ease-in-out">
+                    <a class="flex flex-col items-center" href="#rsvp"><img class="mb-1.5 hover:animate-bounce" src="assets/icons/rsvp-navbar.svg" alt="rsvp" width="30" height="30" />RSVP</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="main" class="bg-bleached-silk w-screen items-center justify-center">
+        <!-- home section -->
+        <section class="home-container flex min-h-screen w-screen items-center justify-center" id="home">
+            <video class="home-bg-video absolute left-0 top-0 h-screen w-screen object-cover brightness-90" src="assets/videos/hero-vertical.mp4" type="video/mp4" autoplay playsinline muted loop></video>
+            <video class="home-bg-video tablet:block absolute left-0 top-0 hidden h-screen w-screen object-cover brightness-90" src="assets/videos/hero-horizontal.mp4" type="video/mp4" autoplay playsinline muted loop></video>
+            <div class="home-data z-[1] flex flex-col items-center text-center text-white">
+                <button class="tablet:m-5 bg-pause fixed top-0 right-0 m-2 h-[30px] w-[30px] bg-no-repeat duration-300 hover:-translate-y-1" id="play"></button>
+                <h1 class="laptop:text-xl tablet:text-base mb-5 text-sm font-semibold">
+                    WE ARE GETTING MARRIED
+                </h1>
+                <h1 class="font-charlotte laptop:text-6xl mb-5 text-5xl">
+                    Baehaqi & Lulu
+                </h1>
+                <p class="laptop:text-lg tablet:text-base mb-5 text-sm font-medium">
+                    Save The Date
+                </p>
+                <div class="tablet:gap-14 laptop:gap-20 flex flex-row gap-7" id="countdown">
+                    <div class="flex flex-col">
+                        <h1 class="laptop:text-4xl text-2xl font-bold" id="days"></h1>
+                        <h2 class="laptop:text-base text-sm">Hari</h2>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="laptop:text-4xl text-2xl font-bold" id="hours"></h1>
+                        <h2 class="laptop:text-base text-sm">Jam</h2>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="laptop:text-4xl text-2xl font-bold" id="minutes"></h1>
+                        <h2 class="laptop:text-base text-sm">Menit</h2>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="laptop:text-4xl text-2xl font-bold" id="seconds"></h1>
+                        <h2 class="laptop:text-base text-sm">Detik</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ayat suci section -->
+        <section class="ayat-suci-container h-auto w-screen pt-24 pb-4">
+            <div class="ayat-suci-data laptop:mx-8 tablet:mx-6 mx-4 flex flex-col items-center justify-center text-center">
+                <img class="laptop:w-[158px] laptop:h-[152px] mb-5" src="assets/images/flower-doa.png" alt="flower" width="130" height="125" />
+                <p class="text-argent laptop:text-lg mb-5 text-base">
+                    "Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu merasa nyaman kepadanya, dan dijadikan-Nya di antaramu mawadah dan rahmah. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi
+                    kaum yang berpikir."
+                </p>
+                <h2 class="text-digital laptop:text-lg text-base font-semibold">
+                    QS. Ar-Rum Ayat 21
+                </h2>
+            </div>
+        </section>
+
+        <!-- couples section -->
+        <section class="couples-container h-auto w-screen pt-24 pb-4" id="couples">
+            <h1 class="font-charlotte text-motif laptop:mx-8 tablet:mx-6 laptop:text-6xl mx-4 flex justify-center text-center text-5xl">
+                Sang Pengantin
+            </h1>
+            <div class="tablet:gap-14 laptop:gap-20 tablet:flex-row laptop:mx-8 tablet:mx-6 mx-4 mt-8 flex flex-col items-center justify-center gap-7 text-center">
+                <div class="groom-profile tablet:w-2/6 flex w-3/4 flex-col items-center rounded-md bg-white py-7">
+                    <img class="tablet:w-[160px] tablet:h-[160px] laptop:w-[180px] laptop:h-[180px]" src="assets/images/groom-circle-couples.png" alt="groom" width="140" height="140" />
+                    <h1 class="font-charlotte text-motif laptop:text-6xl my-3 text-5xl">
+                        Baehaqi
+                    </h1>
+                    <h2 class="text-digital laptop:text-lg mb-1 text-base font-medium">
+                        Ahmad Baehaqi
+                    </h2>
+                    <p class="text-argent laptop:text-base mb-1 text-sm font-medium">
+                        Putra kedua dari :
+                    </p>
+                    <p class="text-digital laptop:text-base mb-1 text-sm">
+                        Bapak Sairin
+                    </p>
+                    <p class="text-digital laptop:text-base mb-1 text-sm">
+                        Ibu Mukaromah(almh)
+                    </p>
+                </div>
+                <div class="bride-profile tablet:w-2/6 flex w-3/4 flex-col items-center rounded-md bg-white py-7">
+                    <img class="tablet:w-[146px] tablet:h-[160px] laptop:w-[180px] laptop:h-[180px]" src="assets/images/bride-circle-couples.png" alt="bride" width="140" height="140" />
+                    <h1 class="font-charlotte text-motif laptop:text-6xl my-3 text-5xl">
+                        Lulu
+                    </h1>
+                    <h2 class="text-digital laptop:text-lg mb-1 text-base font-medium">
+                        Zahrotun Luluk
+                    </h2>
+                    <p class="text-argent laptop:text-base mb-1 text-sm font-medium">
+                        Putri kedua dari :
+                    </p>
+                    <p class="text-digital laptop:text-base mb-1 text-sm">
+                        Bapak Tarsono(alm)
+                    </p>
+                    <p class="text-digital laptop:text-base mb-1 text-sm">
+                        Ibu Sunenti
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- event section -->
+        <section class="event-container flex h-auto w-screen flex-col items-center justify-center pt-24 pb-4" id="event">
+            <h1 class="font-charlotte text-motif laptop:mx-8 tablet:mx-6 laptop:text-6xl mx-4 mb-8 flex text-center text-5xl">
+                Menuju Hari Bahagia
+            </h1>
+            <p class="laptop:mx-8 tablet:mx-6 text-argent laptop:text-lg mx-4 text-center text-base">
+                "Siang dan malam berganti begitu cepat, di antara saat-saat mendebarkan yang belum pernah kami rasakan sebelumnya. Kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia."
+            </p>
+            <div class="event-data tablet:gap-9 laptop:gap-14 tablet:grid-cols-3 laptop:mx-8 tablet:mx-6 laptop:w-3/4 mx-4 mt-8 grid w-4/5 grid-cols-1 gap-7 rounded-md bg-white p-7 text-center">
+                <div class="flex flex-col">
+                    <h1 class="font-charlotte text-motif laptop:text-6xl mb-5 text-5xl">
+                        Akad Pernikahan
+                    </h1>
+                    <h2 class="text-argent laptop:text-lg mb-1 text-base font-medium">
+                        Selasa, 31 Oktober 2023
+                    </h2>
+                    <p class="text-argent laptop:text-lg text-base">
+                        09.00 WIB
+                    </p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="tablet:w-[160px] tablet:h-[160px] laptop:w-[180px] laptop:h-[180px]" src="assets/images/couple-circle-event.png" alt="couple" width="140" height="140" />
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="font-charlotte text-motif laptop:text-6xl mb-5 text-5xl">
+                        Resepsi Pernikahan
+                    </h1>
+                    <h2 class="text-argent laptop:text-lg mb-1 text-base font-medium">
+                        Selasa, 31 Oktober 2023
+                    </h2>
+                    <p class="text-argent laptop:text-lg text-base">
+                        11.00 WIB-Selesai
+                    </p>
+                </div>
+                <div class="tablet:col-span-3 flex flex-col items-center">
+                    <img class="tablet:w-[40px] tablet:h-[40px] mb-5" src="assets/icons/map-event.svg" alt="map" width="36" height="36" />
+                    <h2 class="text-argent tablet:text-lg laptop:text-xl mb-2 font-medium">
+                        Di rumah mempelai Putri
+                    </h2>
+                    <p class="text-argent tablet:text-base laptop:text-lg mb-5 text-sm">
+                        Bertempat di Desa Kendawa 01 Rt 05 Rw 01 Kec. Jatibarang Kab. Brebes
+                    </p>
+                    <button type="button" class="bg-motif tablet:text-base laptop:text-lg hover:bg-tiki-hut flex w-fit items-center rounded-xl p-2 text-sm font-medium text-white transition duration-300 duration-300 ease-in-out hover:-translate-y-1">
+              <a
+                class="flex"
+                href="https://maps.app.goo.gl/AN72UkS6J2k1XscQ6"
+                target="_blank"
+                ><img
+                  class="mr-1.5 hover:animate-bounce"
+                  alt="book"
+                  width="20"
+                  height="20"
+                  src="assets/icons/loc-button-event.svg"
+                />Lihat Lokasi</a
+              >
+            </button>
+                </div>
+            </div>
+            <div class="laptop:w-3/4 laptop:mx-8 tablet:mx-6 mx-4 mt-8 flex w-4/5 flex-col items-center rounded-md bg-white p-7 text-center">
+                <h1 class="font-charlotte text-motif laptop:text-6xl mb-5 text-5xl">
+                    Kirim Hadiah
+                </h1>
+                <p class="text-argent laptop:text-lg mb-5 text-base">
+                    Ungkapan tanda
+                </p>
+                <div onclick="hidePopup()" class="popup-prokes fixed top-0 left-0 z-[2] flex hidden h-screen w-full items-center justify-center bg-black opacity-70">
+                    <img class="tablet:w-2/5 laptop:mx-8 tablet:mx-6 mx-4 flex w-4/5 flex-col items-center justify-center rounded-md bg-white" src="assets/images/prokes-popup.png" width="289" height="65" alt="prokes" />
+                </div>
+                <button onclick="showPopup()" class="bg-motif tablet:text-base laptop:text-lg hover:bg-tiki-hut flex w-fit items-center rounded-xl p-2 text-sm font-medium text-white transition duration-300 duration-300 ease-in-out hover:-translate-y-1"> Kirim Hadiah
+          </button>
+            </div>
+        </section>
+
+
+
+        <!-- gallery section -->
+        <section class="gallery-container flex h-auto w-screen flex-col items-center justify-center pt-24 pb-4" id="gallery">
+            <h1 class="font-charlotte text-motif laptop:mx-8 tablet:mx-6 laptop:text-6xl mx-4 mb-8 text-center text-5xl">
+                Bahagia Kami
+            </h1>
+            <p class="text-argent laptop:text-lg laptop:mx-8 tablet:mx-6 mx-4 text-center text-base">
+                "Mencintai bukan untuk menyamai, tetapi keikhlasan menerima perbedaan."
+            </p>
+            <div x-data="slider()" class="laptop:mx-8 tablet:mx-6 mx-4 mt-8 flex flex-col items-center">
+                <div class="flex flex-row items-center justify-center">
+                    <button @click="back()" class="bg-motif hover:bg-tiki-hut z-0 -mr-6 h-[42px] w-[42px] rounded-full text-white transition duration-300 ease-in-out">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-7 w-9 hover:-translate-x-0.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+                    <template x-for="(image, index) in images">
+              <img
+                x-show="selected == index + 1"
+                class="tablet:w-2/5 w-4/5 rounded-md"
+                :src="image"
+                alt="slide"
+                width="220"
+                height="307"
+            /></template>
+                    <button @click="next()" class="bg-motif hover:bg-tiki-hut z-0 -ml-6 h-[42px] w-[42px] rounded-full text-white transition duration-300 ease-in-out">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-7 w-9 hover:translate-x-0.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- rsvp section -->
+        <section class="rsvp-container h-auto w-screen pt-24 pb-4" id="rsvp">
+            <h1 class="font-charlotte text-motif laptop:text-6xl laptop:mx-8 tablet:mx-6 mx-4 mb-8 text-center text-5xl">
+                Konfirmasi Kehadiran
+            </h1>
+            <p class="text-argent laptop:text-lg laptop:mx-8 tablet:mx-6 mx-4 text-center text-base">
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa restu, kami ucapkan terima kasih.
+            </p>
+            <form class="form-inline" method="POST" action="https://script.google.com/macros/s/AKfycbw8M_Aibc--LLSMRnY4pv7e5YH1tF-2LEhmKH5SEKEbnJFcTjnfdS23_R-RTyaz-c540w/exec" id="my-form">
+                <label for="name">Nama:</label>
+                <input type="name" id="name" name="name">
+                <label for="amount">Jumlah:</label>
+                <input type="amount" id="amount" name="amount">
+                <label for="konfirmation" id="konfirmation" name="konfirmation">
+                <input type="checkbox" name="konfirmation" value="hadir"> Hadir
+                <input type="checkbox" name="konfirmation" value="tidak hadir"> Tidak Hadir
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- footer -->
+        <footer class="bg-bleached-silk h-auto w-screen items-center py-24" id="footer">
+            <p class="text-argent laptop:text-lg laptop:mx-8 tablet:mx-6 mx-4 mb-8 text-center text-base">
+                Atas Doa dan Restu dari Bapak/Ibu/Saudara/i Kami ucapkan banyak terima kasih.
+            </p>
+            <h1 class="font-charlotte text-motif laptop:text-6xl laptop:mx-8 tablet:mx-6 mx-4 mb-8 text-center text-5xl">
+                Baehaqi & Lulu
+            </h1>
+        </footer>
+        <!-- scrollup button -->
+        <button id="scrollup" class="tablet:mr-5 tablet:mb-28 fixed bottom-0 right-0 z-[1] mr-2 mb-24 duration-300 hover:-translate-y-1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="text-argent h-[30px] w-[30px] rounded-md bg-white p-1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 15.75l7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </button>
+</body>
+<!-- add some js function -->
+<script src="assets/scripts/main.js"></script>
+
+<script>
+    window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                .then(() => {
+                    alert("Konfirmasi Kehadiran");
+                })
+        });
+    });
+</script>
+
+</html>
